@@ -2,36 +2,6 @@
 
   <h1 align="center">Python Django Integration with KeyCloak</h1>
 
-  
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
 ## About The Project
 
 just a simple web application with login page and two other pages one for admin and one for normal
@@ -96,10 +66,10 @@ After generating the secret key for 'monty_mobile_client' update the .env KEYCLO
    ```
 
 
-<h4>Open [Postman](https://www.postman.com/) To TEST APIs </h4>
-* http://0.0.0.0:9090/api/v1/login/ to get new access token
-* POST Request: `{'email': 'normal_user@keycloak.org', 'password': 'passord'}`
-* Response: `{
+### Open [Postman](https://www.postman.com/) To TEST APIs </h4>
+1. http://0.0.0.0:9090/api/v1/login/ to get new access token
+2. POST Request: `{'email': 'normal_user@keycloak.org', 'password': 'passord'}`
+3. Response: `{
     "access_token": "eyJhbGciOiJSUUZzZkNGYmlsZV9jbGllbnQiL0V_NnVe-xYyXyJbZP8bm8JtImimZu3",
     "expires_in": 300,
     "refresh_expires_in": 1800,
@@ -109,9 +79,9 @@ After generating the secret key for 'monty_mobile_client' update the .env KEYCLO
     "session_state": "67d00534-bfdc-4ac7-8112-4fb706f02775",
     "scope": "profile email"
 }`
-* try to get token for admin user and normal user
-* GET http://0.0.0.0:9090/api/v1/user/ with user token or admin token
-* Response: ` {
+4. try to get token for admin user and normal user
+5. GET http://0.0.0.0:9090/api/v1/user/ with user token or admin token
+6. Response: ` {
         "keycloak_id": "098f3742-96e5-4040-88e8-459cd0478561",
         "password": "",
         "last_login": "2022-04-13T19:45:18.015986Z",
@@ -126,6 +96,6 @@ After generating the secret key for 'monty_mobile_client' update the .env KEYCLO
         "groups": [],
         "user_permissions": []
     }`
-* GET http://0.0.0.0:9090/api/v1/admin/ with user token
-* Response: `{'error': 'you do not have permission to perform this action'}`
+7. GET http://0.0.0.0:9090/api/v1/admin/ with user token
+8. Response: `{'error': 'you do not have permission to perform this action'}`
 
