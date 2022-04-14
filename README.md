@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-  <h1 align="center">Python Django Integration with KeyCloak</h3>
+  <h1 align="center">Python Django Integration with KeyCloak</h1>
 
   
 
@@ -32,7 +32,6 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 just a simple web application with login page and two other pages one for admin and one for normal
@@ -58,7 +57,6 @@ Use the `README.md` to get started.
 
 
 
-<!-- GETTING STARTED -->
 ## Getting Started
 
 
@@ -81,7 +79,7 @@ To RUN and TEST this project on your local machine, Please follow below instruct
    docker-compose up --build
    ```
 
-<br>
+
 <h4>Open your browser</h4>
 
 * Go to KeyCloak Administration console [http://0.0.0.0:28080/admin/](http://0.0.0.0:28080/admin/)
